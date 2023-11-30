@@ -1,0 +1,13 @@
+.big {
+  background: #ccc;
+  height: 300px;
+}
+
+.btn {
+  font-size: 14px;
+}
+
+.box {
+  background: lightgreen;
+  height: 40px;
+}

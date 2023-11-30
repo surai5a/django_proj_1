@@ -1,0 +1,131 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>АвтоПрофи - лучший сервис!</title>
+    <link rel="canonical" href="https://getbootstrap.com/docs/5.3/components/scrollspy/">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
+          integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9"
+          crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script type="text/javascript" src="{% static 'js/scroll.js' %}"></script>
+    <style>
+    body{
+        position: relative; /* required */
+        padding-top: 20px;	/* prevent content to go underneath the fixed navbar */
+    }
+    </style>
+</head>
+<body data-bs-spy="scroll" data-bs-target="#nav-nav-pills">
+    <div class="container" style="position: sticky; top: 0; background-color: #ffff;">
+        <header class="d-flex flex-wrap justify-content-center py-3 mb-4 border-bottom">
+          <a href="#main" class="d-flex align-items-center mb-3 mb-md-0 me-md-auto link-body-emphasis text-decoration-none">
+            <span class="fs-4">АвтоПрофи</span>
+          </a>
+          <ul id="nav-nav-pills" class="nav nav-pills">
+            <li class="nav-item"><a href="#main" class="nav-link" aria-current="page">Главная</a></li>
+            <li class="nav-item"><a href="#services" class="nav-link">Услуги</a></li>
+            <li class="nav-item"><a href="#request" class="nav-link">Оставить заявку</a></li>
+            <li class="nav-item"></li>
+            <li class="nav-item"><a href="#" class="nav-link">О Нас</a></li>
+            <li class="nav-item"><a href="baza/" class="nav-link">Админ</a></li>
+          </ul>
+        </header>
+      </div>
+
+    <div id="main" class="px-4 py-5 my-5 text-center">
+        <div style="height: 150px"></div>
+        <h1 class="display-5 fw-bold text-body-emphasis">Мы - лучшие.</h1>
+        <div class="col-lg-6 mx-auto">
+            <p  class="lead mb-4">И это не просто слова. Тысячи довольных клиентов и десятки тысяч исправных машин на дорогах не дадут нам соврать.</p>
+            <div class="d-grid gap-2 d-sm-flex justify-content-sm-center">
+                <button type="button" onclick="handleButtonClick()" class="btn btn-primary btn-lg px-4 gap-3">Оставить заявку</button>
+                <button type="button" class="btn btn-outline-secondary btn-lg px-4">Уже оставил</button>
+            </div>
+        </div>
+        <div style="height: 250px"></div>
+    </div>
+
+    <div class="container px-4 py-5" id="featured-3">
+        <h2 id="services" class="pb-2 border-bottom">Что мы умеем?</h2>
+        <div class="row g-4 py-5 row-cols-1 row-cols-lg-3">
+            <div class="feature col">
+                <h3 class="fs-2 text-body-emphasis">Разбираемся в механике</h3>
+                <p>Проводим работы от замены ремня ГРМ до полного капитального ремонта двигателя. Используем только оригинальные и проверенные временем запчасти от надежных поставщиков. Даем гарантию на каждую замененную деталь.</p>
+                <a href="#" class="icon-link">
+                    Call to action
+                    <i class="bi-chevron-right"></i>
+                </a>
+            </div>
+          <div class="feature col">
+                <h3 class="fs-2 text-body-emphasis">Дружим с проводами</h3>
+                <p>Легко найдем причину сгоревшего предохранителя и исправим последствия подключения компрессора к прикуривателю. Наши электрики имеют большой опыт работы с всевозможными марками автомобилей и точно определят где сгорел провод, из-за которого приборная панель горит как гирлянда.</p>
+                <a href="#" class="icon-link">
+                    Call to action
+                    <i class="bi-chevron-right"></i>
+                </a>
+          </div>
+          <div class="feature col">
+                <h3 class="fs-2 text-body-emphasis">Умеем поддержать</h3>
+                <p>Забота о клиентах - наша забота, поэтому даем нашим постоянным клиентам скидку на тех. обслуживание автомобиля. Замена масла, колодок, фильтров - все это на выгодных условиях только для вас.</p>
+                <a href="#" class="icon-link">
+                    Call to action
+                    <i class="bi-chevron-right"></i>
+                </a>
+          </div>
+        </div>
+        <div style="height: 150px"></div>
+    </div>
+
+    <div class="container col-xl-10 col-xxl-8 px-4 py-5">
+        <div class="row align-items-center g-lg-5 py-5">
+            <div class="col-lg-7 text-center text-lg-start">
+                <h1 class="display-4 fw-bold lh-1 text-body-emphasis mb-3">Оставьте заявку сейчас</h1>
+                <p class="col-lg-10 fs-4">Вы не заметите как быстро ваша машина будет снова радовать вас своей исправностью</p>
+            </div>
+            <div class="col-md-10 mx-auto col-lg-5">
+                <form id="box" class="p-4 p-md-5 border rounded-3 bg-body-tertiary" method="post" action="postclient/">
+                    {% csrf_token %}
+                    <div class="form-floating mb-3">
+                        <input type="tel" class="form-control" id="floatingInput" placeholder="+7-999-888-77-66" name="number">
+                        <label for="floatingInput">Номер телефона</label>
+                    </div>
+                    <div class="form-floating mb-3">
+                        <input id="request" type="text" class="form-control" id="floatingPassword" placeholder="Иван Иванов" name="name">
+                        <label for="floatingPassword">Имя и фамилия</label>
+                    </div>
+                    <div class="form-floating mb-3">
+                        <input id="request" type="text" class="form-control" id="floatingPassword" placeholder="Тут беда, короче..." name="descr">
+                        <label for="floatingPassword">Ваша проблема</label>
+                    </div>
+                    <button class="w-100 btn btn-lg btn-primary" type="submit">Отправить</button>
+                    <hr class="my-4">
+                    <small class="text-body-secondary">Нажимая Отправить, вы соглашаетесь с правилами сервиса.</small>
+                </form>
+            </div>
+        </div>
+        <div style="height: 150px"></div>
+    </div>
+
+    <div class="container">
+        <footer class="py-3 my-4">
+            <ul class="nav justify-content-center border-bottom pb-3 mb-3">
+              <li class="nav-item"><a href="#" class="nav-link px-2 text-body-secondary">Главная</a></li>
+              <li class="nav-item"><a href="#" class="nav-link px-2 text-body-secondary">Услуги</a></li>
+              <li class="nav-item"><a href="#" class="nav-link px-2 text-body-secondary">Оставить заявку</a></li>
+              <li class="nav-item"><a href="#" class="nav-link px-2 text-body-secondary">О нас</a></li>
+              <li class="nav-item"><a href="#" class="nav-link px-2 text-body-secondary">Админ</a></li>
+            </ul>
+            <p class="text-center text-body-secondary">© 2023 ООО "АвтоПрофи"</p>
+        </footer>
+    </div>
+
+
+</body>
+</html>
